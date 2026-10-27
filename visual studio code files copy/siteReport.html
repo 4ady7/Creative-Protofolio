@@ -1,52 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<!--Validation helped me discover a serious mistake. The mistake was that as I discovered that my head tag was prevviously typed mistakely as header, which is incorrect. So I fixed it by changing header back to head for the head tag-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site report Page</title>
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="main.css" media="screen">
+    <title>Shady Nashed · Site Report</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 799px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
 </head>
 
 <body id="clicked">
     <header>
-        <a href="#clicked" class="DisplayNav"></a>
-        <a href="#" class="off">X</a>
-        <a href="index.html" class="icon"><span>Sha</span>ady</a>
+        <a href="#clicked" class="DisplayNav" aria-label="Open menu"></a>
+        <a href="#" class="off" aria-label="Close menu">×</a>
+        <a href="index.html" class="icon"><span>Sh</span>ady</a>
     </header>
 
     <nav>
         <ul>
             <li>
-                <a href="index.html" class="HomePage"> Home Page </a>
+                <a href="index.html" class="HomePage">Home</a>
             </li>
-
-            <li>             
-                <a href="project.html" class="Project"> Project Page</a>
-            </li>
-
             <li>
-                <a href="contact.html" class="Contact"> Contact Page </a>
+                <a href="project.html" class="Project">Projects</a>
             </li>
-
-            <li>                  
-                <a href="videoDemo.html" class="Video"> Video Demo Page </a>
-            </li>
-
             <li>
-                  <!--I tried copying and pasting the whole link at first but seemed to give a strange ouutcome. I did at first like this: file:///Users/shady/Library/CloudStorage/OneDrive-TheUniversityofNorthampton/web%20development/Assignment1%20main%20folder/as1-ShadyNashed/sitereport.html-->                
-                <a href="sitereport.html" class="report"> Site Report Page </a>
+                <a href="contact.html" class="Contact">Contact</a>
+            </li>
+            <li>
+                <a href="videoDemo.html" class="Video">Video</a>
+            </li>
+            <li>
+                <a href="siteReport.html" class="report is-current" aria-current="page">Site Report</a>
             </li>
         </ul>
     </nav>
 
     <main>
-        <h1 class="HeaderUnderline">Welcome to Shady's Site Report Page</h1>
+        <h1 class="HeaderUnderline">Site report</h1>
         <div>
-
             <p class="SiteReportStyle">Here I will mainly point out what I have learned while learning.</p>
 
             <p class="SiteReportStyle">I learned that the title tag is used to identify the page that is currently being used, allowing for more clarity when the page is actually in use. I also learned that it should be placed in the head tag.</p>
@@ -71,85 +63,77 @@
 
             <p class="SiteReportStyle">One of the concepts, I used is the Z index, when I was facing a problem where the orange underline animation was overlaps my navigation side bar. By using the Z index, I solved this problem, so that the z index for the navigation bar is higher than the z index for the orange underline animation.</p>
 
-            <p class="SiteReportStyle"> Finally, in my site report, I conclude that I have elaborated on a couple of things that I learned throughout my time as I was working on HTML and CSS.</p>
+            <p class="SiteReportStyle">Finally, in my site report, I conclude that I have elaborated on a couple of things that I learned throughout my time as I was working on HTML and CSS.</p>
 
-            <p class="SiteReportStyle"> Video Demonstration URL: https://mymedia.northampton.ac.uk/media/1st+try/0_4ae6jzvm</p>
-
-            <a href="https://mymedia.northampton.ac.uk/media/24822832+Shady+Nashed+Video+Demonstration/0_hk0ic912" target="_blank" class="SiteReportStyle">Video Demonstration URL: Click Here</a>
-            
-        
+            <p class="SiteReportStyle"><a href="https://mymedia.northampton.ac.uk/media/24822832+Shady+Nashed+Video+Demonstration/0_hk0ic912" target="_blank">Watch the video demonstration</a></p>
         </div>
     </main>
 
-    <!-- I was facing a design issue here. What was happening is that I am using my main tag background for design my page, and now I was faced with having to fit the all the other content in the aside tag, which was not enough. I solved it my creating a div inisde of another div -->
     <aside class="AsideSiteReportPage">
+        <h2>Validation screenshots</h2>
         <div class="SiteReportPage">
-
-            <!-- I was facing a problem my first two image titles in the grid layout were persistant on being unconsistent with the rest of the titles structure. I solved this, but how I solved it is weird, because I just uncopied the previous ones and typied them again. I feel like how the view of the website is sometimes beyond just how I control it with coding. I think that the view and opening in the browser, sometimes as keep doing too many changes, it stops responding as expected as type more code in visual studio code, taking into consideration that I have not shut down my computer once since I started committing because I would afriad that I might forgot to save or stuff like that, evne I am turning auto save on. -->
-    
-
             <div class="SiteReportPage">
-                <a href="ScreenshotHomePage.png" target="_blank" class="SiteReportImageAnchor">Home Page</a>
-                <img src="ScreenshotHomePage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
-            </div>
-    
-            <div class="SiteReportPage">
-                <a href="ScreenshotContactPage.png" target="_blank" class="SiteReportImageAnchor">Contact Page</a>
-                <img src="ScreenshotContactPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+                <a href="ScreenshotHomePage.png" target="_blank" class="SiteReportImageAnchor">Home page</a>
+                <img src="ScreenshotHomePage.png" alt="Validation screenshot of the home page" class="SiteReportResizingImages">
             </div>
 
             <div class="SiteReportPage">
-                <a href="ScreenshotVideoDemoPage.png" target="_blank" class="SiteReportImageAnchor">Video Demo Page</a>
-                <img src="ScreenshotVideoDemoPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+                <a href="ScreenshotContactPage.png" target="_blank" class="SiteReportImageAnchor">Contact page</a>
+                <img src="ScreenshotContactPage.png" alt="Validation screenshot of the contact page" class="SiteReportResizingImages">
             </div>
-    
+
             <div class="SiteReportPage">
-                <a href="ScreenshotProjectPage.png" target="_blank" class="SiteReportImageAnchor">Project Page</a>
-                <img src="ScreenshotProjectPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+                <a href="ScreenshotVideoDemoPage.png" target="_blank" class="SiteReportImageAnchor">Video demo page</a>
+                <img src="ScreenshotVideoDemoPage.png" alt="Validation screenshot of the video demo page" class="SiteReportResizingImages">
             </div>
-    
+
             <div class="SiteReportPage">
-                <a href="ScreenshotSiteReportPage.png" target="_blank" class="SiteReportImageAnchor">Site Report Page</a>
-                <img src="ScreenshotSiteReportPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+                <a href="ScreenshotProjectPage.png" target="_blank" class="SiteReportImageAnchor">Project page</a>
+                <img src="ScreenshotProjectPage.png" alt="Validation screenshot of the project page" class="SiteReportResizingImages">
             </div>
-    
+
             <div class="SiteReportPage">
-                <a href="ScreenshotMainViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS Main</a>
-                <img src="ScreenshotMainViewCSS.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+                <a href="ScreenshotSiteReportPage.png" target="_blank" class="SiteReportImageAnchor">Site report page</a>
+                <img src="ScreenshotSiteReportPage.png" alt="Validation screenshot of the site report page" class="SiteReportResizingImages">
             </div>
-    
+
             <div class="SiteReportPage">
-                <a href="ScreenshotDesktopViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS Desktop</a>
-                <img src="ScreenshotDesktopViewCSS.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+                <a href="ScreenshotMainViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS main</a>
+                <img src="ScreenshotMainViewCSS.png" alt="Validation screenshot of the shared CSS" class="SiteReportResizingImages">
             </div>
-    
+
             <div class="SiteReportPage">
-                <a href="ScreenshotMobileViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS Mobile</a>
-                <img src="ScreenshotMobileViewCSS.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+                <a href="ScreenshotDesktopViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS desktop</a>
+                <img src="ScreenshotDesktopViewCSS.png" alt="Validation screenshot of the desktop CSS" class="SiteReportResizingImages">
+            </div>
+
+            <div class="SiteReportPage">
+                <a href="ScreenshotMobileViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS mobile</a>
+                <img src="ScreenshotMobileViewCSS.png" alt="Validation screenshot of the mobile CSS" class="SiteReportResizingImages">
             </div>
         </div>
     </aside>
 
-    <footer> 
-        <p class="footerReportStyle"> Rerference: Color Palette Reference: Coolors.co. (2017). Coolors.co. [online] Available at: https://coolors.co/355ed1-308dff-0050b5-2d3167-b0d7ff [Accessed 28 Feb. 2025].</p>
+    <footer>
+        <p class="footerReportStyle">Reference: Color Palette Reference: Coolors.co. (2017). Coolors.co. [online] Available at: https://coolors.co/355ed1-308dff-0050b5-2d3167-b0d7ff [Accessed 28 Feb. 2025].</p>
 
-        <p class="footerReportStyle"> Harvard referencing tool Rerference: MyBib Contributors (2019). Harvard Referencing Generator – FREE – (updated for 2019). [online] MyBib. Available at: https://www.mybib.com/tools/harvard-referencing-generator.</p>
+        <p class="footerReportStyle">Harvard referencing tool reference: MyBib Contributors (2019). Harvard Referencing Generator – FREE – (updated for 2019). [online] MyBib. Available at: https://www.mybib.com/tools/harvard-referencing-generator.</p>
 
-        <p class="footerReportStyle"> Keyframes Rerference: MDN Web Docs. (n.d.). @keyframes. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes.</p>
+        <p class="footerReportStyle">Keyframes reference: MDN Web Docs. (n.d.). @keyframes. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes.</p>
 
-        <p class="footerReportStyle"> Underline Animation code Reference: Youtu.be. (2025). Available at: https://youtu.be/z2LQYsZhsFw [Accessed 15 Mar. 2025].</p>
+        <p class="footerReportStyle">Underline animation code reference: Youtu.be. (2025). Available at: https://youtu.be/z2LQYsZhsFw [Accessed 15 Mar. 2025].</p>
 
-        <p class="footerReportStyle"> CSS Gradient Generator Rerference: CSS Gradient. (2017). CSS Gradient — Generator, Maker, and Background. [online] Available at: https://cssgradient.io.</p>
+        <p class="footerReportStyle">CSS Gradient Generator reference: CSS Gradient. (2017). CSS Gradient — Generator, Maker, and Background. [online] Available at: https://cssgradient.io.</p>
 
-        <p class="footerReportStyle"> Project Image Generator Rerference: Dummyimage.com. (2025). Dynamic Dummy Image Generator - DummyImage.com. [online] Available at: https://dummyimage.com [Accessed 14 Mar. 2025].</p>
+        <p class="footerReportStyle">Project Image Generator reference: Dummyimage.com. (2025). Dynamic Dummy Image Generator - DummyImage.com. [online] Available at: https://dummyimage.com [Accessed 14 Mar. 2025].</p>
 
-        <p class="footerReportStyle"> Validation Tool Rerference: W3C (n.d.). The W3C Markup Validation Service. [online] validator.w3.org. Available at: https://validator.w3.org/#validate_by_input.</p>
+        <p class="footerReportStyle">Validation tool reference: W3C (n.d.). The W3C Markup Validation Service. [online] validator.w3.org. Available at: https://validator.w3.org/#validate_by_input.</p>
 
-        <p class="footerReportStyle"> More Animation Exploration Reference: Youtu.be. (2025). Available at: https://youtu.be/z2LQYsZhsFw [Accessed 15 Mar. 2025].</p>
+        <p class="footerReportStyle">More animation exploration reference: Youtu.be. (2025). Available at: https://youtu.be/z2LQYsZhsFw [Accessed 15 Mar. 2025].</p>
 
-        <p class="footerReportStyle"> More Animation Exploration Reference: W3schools (2019). CSS Animations. [online] W3schools.com. Available at: https://www.w3schools.com/css/css3_animations.asp.</p>
+        <p class="footerReportStyle">More animation exploration reference: W3schools (2019). CSS Animations. [online] W3schools.com. Available at: https://www.w3schools.com/css/css3_animations.asp.</p>
 
-        <p>&copy; Shady Nashed 2025. All rights reserved.</p>
+        <p class="copyright">&copy; Shady Nashed 2026. All rights reserved.</p>
     </footer>
 </body>
 </html>

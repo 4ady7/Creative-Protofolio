@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-label="Project 3">
+  <rect width="800" height="520" fill="#243140"/>
+  <rect x="80" y="80" width="250" height="160" rx="16" fill="#314155"/>
+  <rect x="360" y="80" width="360" height="70" rx="16" fill="#314155"/>
+  <rect x="360" y="170" width="280" height="70" rx="16" fill="#3d5168"/>
+  <text x="80" y="360" fill="#f4f1eb" font-family="Georgia, serif" font-size="64">Project 3</text>
+</svg>

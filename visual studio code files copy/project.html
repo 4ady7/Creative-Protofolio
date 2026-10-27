@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Validation helped me discover a serious mistake. The mistake was that as I discovered that my head tag was prevviously typed mistakely as header, which is incorrect. So I fixed it by changing header back to head for the head tag-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="main.css" media="screen">
+    <title>Shady Nashed · Projects</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 799px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
 </head>
 
 <body id="clicked">
     <header>
-        <a href="#clicked" class="DisplayNav"></a>
-        <a href="#" class="off">X</a>
-        <a href="index.html" class="icon"><span>Sha</span>ady</a>
+        <a href="#clicked" class="DisplayNav" aria-label="Open menu"></a>
+        <a href="#" class="off" aria-label="Close menu">×</a>
+        <a href="index.html" class="icon"><span>Sh</span>ady</a>
     </header>
 
     <nav>
         <ul>
             <li>
-                <a href="index.html" class="HomePage"> Home Page </a>
+                <a href="index.html" class="HomePage">Home</a>
             </li>
-
             <li>
-                  <!--I tried copying and pasting the whole link at first but seemed to give a strange ouutcome. I did at first like this: file:///Users/shady/Library/CloudStorage/OneDrive-TheUniversityofNorthampton/web%20development/Assignment1%20main%20folder/as1-ShadyNashed/project.html-->                
-                <a href="project.html" class="Project"> Project Page</a>
+                <a href="project.html" class="Project is-current" aria-current="page">Projects</a>
             </li>
-
             <li>
-                <a href="contact.html" class="Contact"> Contact Page </a>
+                <a href="contact.html" class="Contact">Contact</a>
             </li>
-
             <li>
-                <a href="videoDemo.html" class="Video"> Video Demo Page </a>
+                <a href="videoDemo.html" class="Video">Video</a>
             </li>
-
             <li>
-                <a href="sitereport.html" class="report"> Site Report Page </a>
+                <a href="siteReport.html" class="report">Site Report</a>
             </li>
         </ul>
     </nav>
 
     <main>
-        <h1 class="HeaderUnderline"> Welcome to Shady's Project Page </h1>
+        <h1 class="HeaderUnderline">Projects</h1>
     </main>
 
     <aside class="ProjectPage">
         <div>
             <h3>Project title 1</h3>
-            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+1" alt="PlaceHolder Image" class="ResizingImage">
-            <p>description</p>
+            <img src="project-1.svg" alt="Placeholder image for project 1" class="ResizingImage">
+            <p>A responsive page built with semantic HTML and a clear visual hierarchy.</p>
         </div>
         <div>
             <h3>Project title 2</h3>
-            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+2" alt="PlaceHolder Image" class="ResizingImage">
-            <p>description</p>
+            <img src="project-2.svg" alt="Placeholder image for project 2" class="ResizingImage">
+            <p>A layout study focused on spacing, type, and alignment.</p>
         </div>
         <div>
             <h3>Project title 3</h3>
-            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+3" alt="PlaceHolder Image" class="ResizingImage">
-            <p>description</p>
+            <img src="project-3.svg" alt="Placeholder image for project 3" class="ResizingImage">
+            <p>A small interface with readable text and a simple structure.</p>
         </div>
         <div>
             <h3>Project title 4</h3>
-            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+4" alt="PlaceHolder Image" class="ResizingImage">
-            <p>description</p>
+            <img src="project-4.svg" alt="Placeholder image for project 4" class="ResizingImage">
+            <p>A visual study in color, contrast, and quiet motion.</p>
         </div>
     </aside>
 
-    <footer> 
-        <p>&copy; Shady Nashed 2025. All rights reserved.</p>
+    <footer>
+        <p class="copyright">&copy; Shady Nashed 2026. All rights reserved.</p>
     </footer>
 </body>
 </html>

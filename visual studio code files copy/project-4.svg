@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-label="Project 4">
+  <rect width="800" height="520" fill="#8a5a44"/>
+  <path d="M0 360 C180 280 280 460 460 340 C620 240 700 300 800 250 L800 520 L0 520 Z" fill="#6e4635"/>
+  <circle cx="620" cy="120" r="48" fill="#f0d2c4"/>
+  <text x="72" y="200" fill="#f4f1eb" font-family="Georgia, serif" font-size="64">Project 4</text>
+</svg>

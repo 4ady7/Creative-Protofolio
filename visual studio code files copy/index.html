@@ -3,64 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="main.css" media="screen">
+    <title>Shady Nashed · Home</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 799px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
 </head>
 
 <body id="clicked">
     <header>
-        <a href="#clicked" class="DisplayNav"></a>
-        <a href="#" class="off">X</a>
-
-        <a href="index.html" class="icon"><span>Sha</span>ady</a>
+        <a href="#clicked" class="DisplayNav" aria-label="Open menu"></a>
+        <a href="#" class="off" aria-label="Close menu">×</a>
+        <a href="index.html" class="icon"><span>Sh</span>ady</a>
     </header>
 
     <nav>
         <ul>
             <li>
-                 <!--I tried copying and pasting the whole link at first but seemed to give a strange ouutcome. I did at first like this: file:///Users/shady/Library/CloudStorage/OneDrive-TheUniversityofNorthampton/web%20development/Assignment1%20main%20folder/as1-ShadyNashed/index.html-->                
-                <a href="index.html" class="HomePage"> Home Page </a>
+                <a href="index.html" class="HomePage is-current" aria-current="page">Home</a>
             </li>
-
             <li>
-                <a href="project.html" class="Project"> Project Page</a>
+                <a href="project.html" class="Project">Projects</a>
             </li>
-
             <li>
-                <a href="contact.html" class="Contact"> Contact Page </a>
+                <a href="contact.html" class="Contact">Contact</a>
             </li>
-
             <li>
-                <a href="videoDemo.html" class="Video"> Video Demo Page </a>
+                <a href="videoDemo.html" class="Video">Video</a>
             </li>
-
             <li>
-                <a href="sitereport.html" class="report"> Site Report Page </a>
+                <a href="siteReport.html" class="report">Site Report</a>
             </li>
         </ul>
     </nav>
 
     <main>
         <h1 class="HeaderUnderline">Welcome to Shady's Portfolio</h1>
+        <p class="HomePageStyle">This is my home page, where I would like to introduce myself.</p>
     </main>
 
-    <aside> 
-        <div>
-            <p class="HomePageStyle">This is my home page where I would like introduce you to myself. </p> 
-        </div>
-        
-        <!-- Using validation helped me relaeased that I had previously forgot to remove the starting of a div when I have removed some the div content and the ending div parts -->
-
-        <p class="HomaPageParagraph">I am Shady, a passionate web developer. </p> 
-        <p class="HomaPageParagraph">I am detail oriented.</p>
-        <p class="HomaPageParagraph"> As a curious person, I love learning.</p>
-        <p class="HomaPageParagraph">Also, I am a hard working self-discipled person.</p>
+    <aside class="intro">
+        <h2>A little about me</h2>
+        <p class="HomaPageParagraph">I am Shady, a passionate web developer.</p>
+        <p class="HomaPageParagraph">I am detail-oriented.</p>
+        <p class="HomaPageParagraph">As a curious person, I love learning.</p>
+        <p class="HomaPageParagraph">I am hard-working and self-disciplined.</p>
     </aside>
 
-    <footer> 
-        <p>&copy; Shady Nashed 2025. All rights reserved.</p>
+    <footer>
+        <p class="copyright">&copy; Shady Nashed 2026. All rights reserved.</p>
     </footer>
 </body>
 </html>

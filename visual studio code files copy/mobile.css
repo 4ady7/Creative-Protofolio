@@ -1,297 +1,67 @@
-/* this the line of code for hiding the homePage icon from the mobile view */
-.icon {
+nav {
     display: none;
 }
 
-/* body styles for mobile view */
-body {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "aside"
-        "footer"
-    ;
+#clicked:target {
+    overflow: hidden;
 }
 
-header {
-    grid-area: header;
+#clicked:target nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 20;
     width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5.5rem 1.75rem 2rem;
+    background: var(--header);
 }
 
-nav {
-    grid-area: nav;
+#clicked:target nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-main {
-    grid-area: main;
+#clicked:target nav a {
+    color: var(--header-text);
+    font-size: 1.7rem;
+    line-height: 1.35;
 }
 
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/* This the code for creating the hamburger icon */
-.DisplayNav {
-    height: 0.8em;
-    width: 1.25em;
-    display: block;
-    border-top: 0.2em solid rgb(29, 26, 26);
-    border-bottom: 0.2em solid rgb(30, 27, 27);
-    border-radius: 0.2em;
-}
-.DisplayNav::before {
-    content: '';
-    position: absolute;
-    width: 1.25em;
-    margin-top: 0.3em;
-    border-top: 0.2em solid #1c1919;
-}
-
-
-/* I do not think we necessary need that line of code because according to my experience, the hamburger icon is already displayed by default when I created it */
-/* #clicked  */
-.DisplayNav {
-    display: block;
-}
-
-/* This the code for hiding the hamburger icon when clicked */
-/* #clicked */
 :target .DisplayNav {
     display: none;
 }
 
-/* this line of code is for hiding the navigation bar if the hamburger icon has not been clicked */
-/* #clicked  */
-nav {
-    background-color: rgb(176, 215, 255);;
-    grid-area: nav;
-    display: none;
-    position: fixed;
-    padding: 2em;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-}
-
-/* This the code for displaying the navigation bar when the hamburger icon is clicked */
-#clicked:target nav {
-    /* background-color: rgb(176, 215, 255); */
-    /* background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-    background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%, rgba(2,0,36,1) 100%);
-    grid-area: nav;
-    display: block;
-    position: fixed;
-    padding: 2em;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-}
-
-/* This the code for hiding the anchor tag if the hamburger icon has not been clicked */
-/* #clicked */
-.off {
-    display: none;
-}
-
-/* This the code for displayng the anchor tag as X if the hamburger icon has been clicked */
-/* #clicked */
 :target .off {
+    order: 3;
     display: block;
-}
-
-
-
-
-/* only for mobile */ /* for the sizing of the image or photo */
-iframe {
-    width: 100%;
-}
-
-
-/* only for my mobile nav ul.*/
-nav ul {
-    display: block;
-}
-
-/* only for mobile */
-p {
-    background-color: transparent;
-    border: none;
-}
-
-/* only for mobile */
-nav ul li a {
-    line-height: 4.1em;
-    font-size: 1.8em;
-}
-
-
-
-
-
-/* Contact form styles only for mobile */
-main form {
-    border: 0.2em solid rgb(0, 0, 139);
-    padding: 0.5em;
-    margin: 1em;
-}
-
-
-
-/* class style only for mobile */
-.HomePage {
-    font-weight: 600;
-    transition: 0.3s ease;
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 1;
     text-decoration: none;
 }
 
-/* hover effect style only for mobile */
-.HomePage:hover{
-    color: rgba(195, 255, 0, 0.963);
-    text-shadow: 0 0 0.1em rgba(195, 255, 0, 0.963), 0 0 50px rgba(195, 255, 0, 0.963);
-}
-
-
-
-
-/* General styles only for mobile */
-
-/* font Styles only for mobile */
-h1 {
-    font-size: 4em;
-    padding: 0.5em;
-    /* box-shadow: rgba(0, 213, 255, 0.483) 0em 5em 15em; */
-}
-
-/* Body styles only for mobile */
 main {
-    padding: 3em;
+    padding-top: 2.1rem;
 }
 
-/* Paragraph Styles only for mobile */
-p {
-    margin: 1em;
+h1 {
+    font-size: clamp(1.85rem, 9vw, 2.5rem);
 }
 
-/* Class Styles only for mobile */
-.HomaPageParagraph {
-    box-shadow: black 0em 1em 1em;
-    margin-bottom: 2em;
-    font-family: Arial, sans-serif;
+.intro,
+.contact-notes,
+main form {
+    padding: 1.15rem;
 }
 
-/* aside styles */
-ol li {
-    margin: 2em;
-    /* box-shadow: black 0em 5em 15em; */
-}
-
-/* footer stles for desktop only */
-footer p {
-    margin-left: 6em;
-}
-
-
-
-
-/* Navigation styles only for mobile */
-
-aside div {
-    padding: 3em;
-}
-
-ul {
-    margin: 2.5em;
-    padding: 1.2em;
-
-    /* border for the border surrounding the navigation bar */
-    border: 0.4em dashed rgb(53, 94, 209);
-}
-
-
-/* HeaderUnderline Animation for the Homepage */
-.HeaderUnderline {
-    /* just to mention it is also by default is an inline-block for the mobile view, but I will keep the display for clarity */
-    display: inline-block; 
-}
-
-/* Using keyframes to create for more dynamic animations */
-@keyframes underlineForHeader {
-
-    0% {
-        opacity: 0;
-        width: 5%;
-        transform: translate(0%, 0);
-    }
-    
-    50% {
-        opacity: 1;
-        transform: translate(100%, 0);
-    } 
-
-    100% {
-        opacity: 0.5;
-        width: 35%;
-        transform: translate(-100%, 0);
-    }
-} 
-
-/* Here, we have Animations created in mobileView, and that's to adjust it to fit the mobile view */
-
-/* Project page styles only for mobile view */
-
-.ProjectPage div {
-    font-size: 1em;
-}
-
-.ResizingImage {
-    width: 250px;
-    height: 210px;
-}
-
-
-/* Site Report page styles only for mobile view */
-.SiteReportResizingImages {
-    width: 350px;
-    height: 210px;
-    align-items: center;
-}
-
-.SiteReportPage {
-    display: grid;
-    grid-template-columns: 100%;
-    -webkit-text-fill-color: #000000;
-    /* column-gap: 0.1em;
-    row-gap: 0.4em;
-    margin: 0.1em; */
-}
-
-.SiteReportImageAnchor {
-    /* code for removing the visibility of the bulletpoints */
-    list-style-type: none; 
-    text-decoration: none;
-    align-items: center;
-    font-size: 0.6em;
-    /* margin: 0.5em; */
-    width: 0.5em;
-}
-
-.AsideSiteReportPage div {
-    border: 1px solid grey;
-    text-align: center;
-    border-radius: 2em;
-    box-shadow: rgba(0, 213, 255, 0.483) 0em 5em 15em;
-    padding: 1em;
+.video-frame {
+    border-radius: 12px;
 }

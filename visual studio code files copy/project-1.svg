@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-label="Project 1">
+  <rect width="800" height="520" fill="#14685d"/>
+  <circle cx="680" cy="90" r="150" fill="#1d8578"/>
+  <circle cx="90" cy="460" r="110" fill="#0f5249"/>
+  <rect x="72" y="318" width="210" height="14" rx="7" fill="#f4f1eb" opacity="0.9"/>
+  <rect x="72" y="348" width="320" height="14" rx="7" fill="#f4f1eb" opacity="0.45"/>
+  <text x="72" y="200" fill="#f4f1eb" font-family="Georgia, serif" font-size="64">Project 1</text>
+</svg>
