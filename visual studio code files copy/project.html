@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Validation helped me discover a serious mistake. The mistake was that as I discovered that my head tag was prevviously typed mistakely as header, which is incorrect. So I fixed it by changing header back to head for the head tag-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
+</head>
+
+<body id="clicked">
+    <header>
+        <a href="#clicked" class="DisplayNav"></a>
+        <a href="#" class="off">X</a>
+        <a href="index.html" class="icon"><span>Sha</span>ady</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="HomePage"> Home Page </a>
+            </li>
+
+            <li>
+                  <!--I tried copying and pasting the whole link at first but seemed to give a strange ouutcome. I did at first like this: file:///Users/shady/Library/CloudStorage/OneDrive-TheUniversityofNorthampton/web%20development/Assignment1%20main%20folder/as1-ShadyNashed/project.html-->                
+                <a href="project.html" class="Project"> Project Page</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="Contact"> Contact Page </a>
+            </li>
+
+            <li>
+                <a href="videoDemo.html" class="Video"> Video Demo Page </a>
+            </li>
+
+            <li>
+                <a href="sitereport.html" class="report"> Site Report Page </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="HeaderUnderline"> Welcome to Shady's Project Page </h1>
+    </main>
+
+    <aside class="ProjectPage">
+        <div>
+            <h3>Project title 1</h3>
+            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+1" alt="PlaceHolder Image" class="ResizingImage">
+            <p>description</p>
+        </div>
+        <div>
+            <h3>Project title 2</h3>
+            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+2" alt="PlaceHolder Image" class="ResizingImage">
+            <p>description</p>
+        </div>
+        <div>
+            <h3>Project title 3</h3>
+            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+3" alt="PlaceHolder Image" class="ResizingImage">
+            <p>description</p>
+        </div>
+        <div>
+            <h3>Project title 4</h3>
+            <img src="https://dummyimage.com/250x200/cd7353/000000.png&text=Project+4" alt="PlaceHolder Image" class="ResizingImage">
+            <p>description</p>
+        </div>
+    </aside>
+
+    <footer> 
+        <p>&copy; Shady Nashed 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

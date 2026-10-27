@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
+</head>
+
+<body id="clicked">
+    <header>
+        <a href="#clicked" class="DisplayNav"></a>
+        <a href="#" class="off">X</a>
+        <a href="index.html" class="icon"><span>Sha</span>ady</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="HomePage"> Home Page </a>
+            </li>
+
+            <li>
+                <a href="project.html" class="Project"> Project Page</a>
+            </li>
+
+            <li>
+                 <!--I tried copying and pasting the whole link at first but seemed to give a strange ouutcome. I did at first like this: file:///Users/shady/Library/CloudStorage/OneDrive-TheUniversityofNorthampton/web%20development/Assignment1%20main%20folder/as1-ShadyNashed/contact.html-->               
+                <a href="contact.html" class="Contact"> Contact Page </a>
+            </li>
+
+            <li>
+                <a href="videoDemo.html" class="Video"> Video Demo Page </a>
+            </li>
+
+            <li>
+                <a href="sitereport.html" class="report"> Site Report Page </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="HeaderUnderline">Welcome to Shady's Contact Page</h1>
+
+        <form action="mailto:shady.nashed24@northampton.ac.uk" method="get">
+            <label for="NameID">Full Name:</label>
+            <input type="text" name="clientName" id="NameID" required>  
+
+            
+            <label for="EmailID">Email:</label>
+            <input type="email" name="clientEmail" id="EmailID" required>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="uk">United Kingdom</option>
+                <option value="usa">United States</option>
+                <option value="fr">France</option>
+            </select>
+
+ 
+            <label for="myTextarea">Message:</label>
+            <textarea name="myTextarea" id="myTextarea"></textarea>
+            
+
+            <input class="submit" type="submit" value="Send to us">
+            
+        </form>
+    </main>
+
+    <aside> 
+        <p class = "selectingJustThis">Please fill the form. Hope I am helping you reach me easily without striving. </p>
+
+        <!-- just learned from validating my ccode that I should not use a paragraph as a subchild of the ordered list -->
+        <p class="SpecificAsideParagraph">For urgent cases call the follwoing number.</p>
+
+        <ol>
+            <li>Phone Number: +44 7936 xxxxxxx (International format)</li>
+            <li>Phone Number: 07936 xxxxxx (UK format)</li>     
+        </ol>
+    </aside>
+
+    <footer> 
+        <p>&copy; Shady Nashed 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

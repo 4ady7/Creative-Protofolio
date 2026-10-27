@@ -1,0 +1,257 @@
+/* style header for desktop only */
+
+/* this the code for hiding the anchor tag from the desktop screen view */
+/* #clicked  */
+.off {
+    display: none;
+}
+/* this the code for hiding my first creted homepage anchor tag from desktop view */
+.HomePage {
+    display: none;
+}
+    
+
+
+
+/* Body styles for desktop only */
+header {
+    grid-area: header;
+    font-family:  'Trebuchet MS', sans-serif;
+}
+
+nav {
+    grid-area: nav;
+    font-family:  'Trebuchet MS', sans-serif;
+}
+
+main {
+    grid-area: main;
+    /* I liked using shadow box it gives a nice effect */
+    box-shadow: rgba(0,212,255,1) 0em 5em 15em;
+    /* display: grid; */
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* that's how my grid is divided and organized for the desktop view */
+body {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 1em;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer"
+    ;
+}
+
+
+
+
+
+/* Navigation Style for desktop only */
+nav ul {
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2.3em; /* better looking desktop nav bar */
+    margin-right: 18em;
+    justify-content: space-between;
+}
+
+nav {
+    /* needed to have margins to avoid collision that results in the disappearance of the logo icon "shaady" */
+    margin: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* the following color appears surrounding the navigation bar */
+    background-color: rgba(0, 213, 255, 0.969);
+    width: 100%; /* for filling the whole nav backgroung with the same color */
+}
+
+nav a {
+    font-size: 1.7em;
+}
+
+ul {
+    margin: 11em; 
+    padding: 1.7em;
+}
+
+
+
+/* Contact form Style for desktop only */
+main {
+    background-color: rgb(0, 0, 139);
+}
+
+form {
+    /* Background color fills the background color of the whole page */
+    background-color: rgb(48, 141, 255);
+}
+
+main form {
+    border: 1em solid;
+    padding: 2em;
+    margin: 3em;
+}
+
+
+
+/* Home page icon Style for desktop only */
+.icon {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+span {
+    color: rgba(14, 14, 92, 0.84);
+}
+
+/* Color transiton Style for desktop only */
+.icon:hover{
+    color: rgba(195, 255, 0, 0.963);
+    text-shadow: 0 0 0.1em rgba(195, 255, 0, 0.963), 0 0 50px rgba(195, 255, 0, 0.963);
+}
+
+
+
+/* font styles for desktop only */
+h1 {
+    font-size: 4em;
+    padding: 0.5em;
+    margin: 1.5em;
+}
+
+.HomaPageParagraph {
+    font-family: Arial, sans-serif;
+}
+
+/* paragraph styles for desktop only */
+p {
+    padding: 0.5em;
+    margin: 1.5em;
+    text-shadow: rgba(0,212,255,1) 0em 5em 15em;
+}
+
+/* aside styles for desktop only */
+aside div {
+    padding: 0.3em;
+}
+
+aside ol {
+    margin-left: 7em;
+}
+
+ol li {
+    margin: 1.5em;
+    margin-left: 3em;
+}
+
+
+
+
+/* footer stles for desktop only */
+footer p {
+    margin-left: 35em;
+}
+
+
+/* HeaderUnderline Animation for the Homepage only for desktop */
+.HeaderUnderline {
+    display: block;
+}
+
+/* Using keyframes to create for more dynamic animations  */
+@keyframes underlineForHeader {
+
+    0% {
+        opacity: 0;
+        width: 40%;
+        transform: translate(0%, 0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(100%, 0);
+    } 
+
+    100% {
+        opacity: 0;
+        width: 20%;
+        transform: translate(0%, 0);
+    }
+} 
+
+/* Here, we have the Animations created in DesktopView, and that's to adjust it to fit the desktop view */
+
+
+
+/* Project page styles only for desktop view */
+
+.ProjectPage {
+    background-color: #ffffff32;
+}
+
+.ResizingImage {
+    width: 410px;
+    height: 370px;
+}
+
+
+/* Site Report page styles only for desktop view */
+
+main div {
+    background-color: rgb(48, 141, 255);
+}
+
+.SiteReportResizingImages {
+    width: 260px;
+    height: 220px;
+}
+
+.SiteReportPage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    -webkit-text-fill-color: #000000;
+    /* column-gap: 0.1em;
+    row-gap: 0.4em;
+    margin: 0.1em; */
+}
+
+.SiteReportImageAnchor {
+    /* code for removing the visibility of the bulletpoint in the navigation bar */
+    list-style-type: none; 
+    text-decoration: none;
+    align-items: center;
+    /* font-size: 0.6em;
+    margin: 0.5em;
+    width: 0.5em; */
+}
+
+.AsideSiteReportPage div {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 2em;
+    box-shadow: rgba(0, 213, 255, 0.483) 0em 5em 15em
+}
+
+
+
+
+
+/* Video Report page styles only for desktop view */
+.AsideVideoPage {
+    padding: 3em;
+}

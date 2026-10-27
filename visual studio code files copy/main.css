@@ -1,0 +1,303 @@
+
+/* styles for both the desktop and mobile */
+
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font Styles for both the desktop and mobile */
+h1 {
+    font-family: "Big Shoulders Stencil";
+    font-style: normal;
+    text-align: center;
+    background-color: rgba(0,212,255,1);
+    font-weight: 39;
+}
+
+/* Paragraph Styles for both the desktop and mobile */
+p {
+    /* let's make the page look better */
+    font-family: "Schoolbell", sans-serif;
+}
+
+/* Class Styles for both the desktop and mobile */
+.HomaPageParagraph {
+    font-size: 1.5em;
+}
+
+.selectingJustThis {
+    font-size: 2em;
+}
+
+.HomePageStyle {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.SiteReportStyle {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
+    text-align: left;
+}
+
+.footerReportStyle {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
+    text-align: left;
+    margin-left: 1em;
+}
+
+/* header styles for both the desktop and mobile */
+header {
+    padding: 2em;
+    font-family: serif, "Schoolbell";
+}
+
+/* main styles for both the desktop and mobile */
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+/* aside styles for both the desktop and mobile */
+aside div {
+    font-size: 2em;
+    margin: 0.2em;
+}
+
+/* footer styles for both the desktop and mobile */
+footer {
+    margin-left: 12em;
+    display: block;
+}
+
+ol {
+    /* code for removing the visibility of the bulletpoints that appears before a list */
+    list-style-type: none; 
+}
+
+/* A class to a style aside paragraph */
+.SpecificAsideParagraph {
+    font-size: 1.2em;
+}
+
+/* Navigation Style for both my mobile and desktop */
+nav ul {
+    /* code for removing the visibility of the bulletpoints */
+    list-style-type: none; 
+}
+
+ul {
+    /* I was just playing around trying to figure out which one changes the color of the text itself of the anchor tag until I discovered that  -webkit-text-fill-color does so */
+    -webkit-text-fill-color: #000000;
+
+    /* color is for the bulletpoint in the navigation bar, I will comment the color out because I have decided on removing the visibility of the bulletpoint in the navigation bar */
+    /* color: rgb(0, 0, 0); */
+}
+
+/* for both the desktop and mobile */
+header {
+    /* The following bacground color appears on the very top of the page, and it is better to be shared between mobile and desktop views */
+    /* this first one is just a backup background that allows the visibility of my hamburger icon on mobile view, and my homepage icon on desktop view, just in case something happened and the liner gradient did not work */
+    background: rgb(128, 127, 152); 
+    /* the following line of code is for the linear gradient. I like it. It's cool. */
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
+}
+
+
+
+
+
+
+/* Contact form style  */
+
+/* for both the desktop and mobile */
+input {
+    font-size: 0.7em;
+}
+
+/* for both the desktop and mobile */
+#myTextarea {
+    font-size: 0.7em;
+    /* the font size controls how large or small the message box, or the so called myTextarea, is going to be */
+    height: 5em;
+    width: 14em
+}
+
+/* for both the desktop and mobile */
+select {
+    font-size: 0.4em;
+}
+
+/* for both the desktop and mobile */
+input[type="submit"] {
+    font-size: 0.4em;
+    grid-column: 2;
+}
+
+/* for both the desktop and mobile */
+main form {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+    row-gap: 0.6em;
+    width: 16em;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+
+
+
+
+/* Color transiton for the HomePage Icon and navigation bar */
+
+/* for both the desktop and mobile */
+.Project {
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+/* for both the desktop and mobile */
+.Project:hover{
+    color: rgba(195, 255, 0, 0.963);
+    text-shadow: 0 0 0.1em rgba(195, 255, 0, 0.963), 0 0 50px rgba(195, 255, 0, 0.963);
+}
+
+/* for both the desktop and mobile */
+.Contact {
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+/* for both the desktop and mobile */
+.Contact:hover{
+    color: rgba(195, 255, 0, 0.963);
+    text-shadow: 0 0 0.1em rgba(195, 255, 0, 0.963), 0 0 50px rgba(195, 255, 0, 0.963);
+}
+
+/* for both the desktop and mobile */
+.Video {
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+/* for both the desktop and mobile */
+.Video:hover{
+    color: rgba(195, 255, 0, 0.963);
+    text-shadow: 0 0 0.1em rgba(195, 255, 0, 0.963), 0 0 50px rgba(195, 255, 0, 0.963);
+}
+
+/* for both the desktop and mobile */
+.report {
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+/* for both the desktop and mobile */
+.report:hover{
+    color: rgba(195, 255, 0, 0.963);
+    text-shadow: 0 0 0.1em rgba(195, 255, 0, 0.963), 0 0 50px rgba(195, 255, 0, 0.963);
+}
+
+
+/* My Hover effect is working perfecting on Safari Desktop view and Mobile view, but It is only working on Chrome Desktop view, and not on Chrome mobile view. 
+Why? I do not know. This is so wired from my point of view. I hope I figure this out */
+
+
+
+
+/* HeaderUnderline Animation for the Homepage */
+
+.HeaderUnderline {
+    position: relative;
+    /* Here we have added lower z index than the one we added to the navigation side bar */
+    z-index: 0;
+    color: #000000;
+    /* Here we have changed the border from a square to a more rounded shape */
+    border-radius: 1em;
+
+}
+
+/* After I have created the undeline animation, I faced a problem which was that the animatio was on top of my toggled on navigation bar. I fixed that by using a z-index 0 and 1 respectively in the class and in the nav */
+
+nav {
+    /* Here we have added a higher z index than the one we added to the HeaderUnderline class */
+    z-index: 1;
+}
+
+/* Underline Animation code Reference: Youtu.be. (2025). Available at: https://youtu.be/dIUOWdwwZBw [Accessed 16 Mar. 2025]. */ 
+.HeaderUnderline::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 4em;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(205, 116, 83);
+    /* More Animation Exploration Reference: Youtu.be. (2025). Available at: https://youtu.be/z2LQYsZhsFw [Accessed 15 Mar. 2025]. */
+    /* Here is the animation property */
+    animation: underlineForHeader 2.9s ease-in-out infinite;
+    padding: 0.2em;
+}
+
+/* the underlineForHeader, which is the animation name, is used to apply the animation to the HeaderUnderline */
+
+
+
+/* Project page styles */
+
+/* Here's the projects grid layout */
+.ProjectPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    margin: 1em;
+}
+
+.ProjectPage div {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 2em;
+    box-shadow: rgba(0, 213, 255, 0.483) 0em 5em 15em
+}
+
+h3 {
+    margin: 1em;
+}
+
+
+
+
+/* General animations */
+body {
+    /* creating the shape of the background by adjusting the degree and size of the background */
+    background: linear-gradient(135deg, #00bcd4, #1e88e5, #42a5f5);
+    background-size: 1em 1em;
+    /* Applying the animation, setting the duration, and seting the background to repeat infinitely */
+    animation: backgroundAnimation 17s infinite;
+}
+
+/* Using keyframes to create for more dynamic animations */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+

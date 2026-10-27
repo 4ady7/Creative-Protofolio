@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--Validation helped me discover a serious mistake. The mistake was that as I discovered that my head tag was prevviously typed mistakely as header, which is incorrect. So I fixed it by changing header back to head for the head tag-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site report Page</title>
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
+</head>
+
+<body id="clicked">
+    <header>
+        <a href="#clicked" class="DisplayNav"></a>
+        <a href="#" class="off">X</a>
+        <a href="index.html" class="icon"><span>Sha</span>ady</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="HomePage"> Home Page </a>
+            </li>
+
+            <li>             
+                <a href="project.html" class="Project"> Project Page</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="Contact"> Contact Page </a>
+            </li>
+
+            <li>                  
+                <a href="videoDemo.html" class="Video"> Video Demo Page </a>
+            </li>
+
+            <li>
+                  <!--I tried copying and pasting the whole link at first but seemed to give a strange ouutcome. I did at first like this: file:///Users/shady/Library/CloudStorage/OneDrive-TheUniversityofNorthampton/web%20development/Assignment1%20main%20folder/as1-ShadyNashed/sitereport.html-->                
+                <a href="sitereport.html" class="report"> Site Report Page </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="HeaderUnderline">Welcome to Shady's Site Report Page</h1>
+        <div>
+
+            <p class="SiteReportStyle">Here I will mainly point out what I have learned while learning.</p>
+
+            <p class="SiteReportStyle">I learned that the title tag is used to identify the page that is currently being used, allowing for more clarity when the page is actually in use. I also learned that it should be placed in the head tag.</p>
+
+            <p class="SiteReportStyle">As I continued to learn, I concluded that the anchor tag is used to link and connect the website page to a clickable identifiable word; so thats when it is clicked, it takes me where I was aiming to go.</p>
+
+            <p class="SiteReportStyle">Then, I came to know that the target=” _blank” attribute allows the opening of the page link in a new tab. The target=” _blank” attribute is placed inside the anchor tag.</p>
+
+            <p class="SiteReportStyle">Now about Validation, which helped me uncover a serious mistake. The mistake that I discovered was that my head tag was previously typed mistakenly as a header, which is incorrect. Thus, I fixed it by changing the header back to head for the head tag.</p>
+
+            <p class="SiteReportStyle">Then, I observed that the Structure of the HTML file is divided into a head tag and a body tag. The head tag includes, for example, CSS links, and the title tag. On the other hand, the body tag includes several tags like header, nav, main, aside, and footer, which could be used in a CSS file to create a layout, preferably, a grid layout.</p>
+
+            <p class="SiteReportStyle">In addition, I learned that I needed to create three CSS files: one for the desktop view, one for the mobile view, and the last one, which will include the styles that should be applied to both the mobile view and the desktop view.</p>
+
+            <p class="SiteReportStyle">One thing I would like to reflect on is how I should link images. I learned that the images should be added to the same folder where the CSS and HTML files are for better practice to maintain accessibility, and I should copy from the relative URL to maintain availability if a transition happens from one device to another. I have done that while linking my validation screenshots and my project placeholders.</p>
+
+            <p class="SiteReportStyle">I was fascinated by animation, so I learned a lot about it. One of the things that I was confused about at first when I was learning animation was that in transform, you have translate, and then you can also use translateX. At first, I was confused about that, but I learned that it's a translation on the X-axis, and the same with translateY, it's a translation on the Y-axis.</p>
+
+            <p class="SiteReportStyle">Also, I learned that if I added part of the title between the span tag, then I would be able to style one part of the title, or like I did it in my portfolio I used it with one word, split it into two, and I styled that one part differently than the other, so that it looks cooler and better.</p>
+
+            <p class="SiteReportStyle">To discuss one of the problems that I faced, My Hover effect is working perfectly on Safari Desktop view and Mobile view, but It is only working on Chrome Desktop view, and not on Chrome mobile view. Why? I do not know. This is so weird from my point of view. I hope I figure this out. Looking back, I think I was too focused on the functions and what I am currently seeing on the screen that I did not take a third-person perspective, but thanks to my tutor who offered support and help, and pointed out and reminded me that I am actually working on mobile now and that Hover effects don’t really work on mobile, as there’s no way to "hover" using touch controls, so they are mainly for the desktop version of the website.</p>
+
+            <p class="SiteReportStyle">One of the concepts, I used is the Z index, when I was facing a problem where the orange underline animation was overlaps my navigation side bar. By using the Z index, I solved this problem, so that the z index for the navigation bar is higher than the z index for the orange underline animation.</p>
+
+            <p class="SiteReportStyle"> Finally, in my site report, I conclude that I have elaborated on a couple of things that I learned throughout my time as I was working on HTML and CSS.</p>
+
+            <p class="SiteReportStyle"> Video Demonstration URL: https://mymedia.northampton.ac.uk/media/1st+try/0_4ae6jzvm</p>
+
+            <a href="https://mymedia.northampton.ac.uk/media/24822832+Shady+Nashed+Video+Demonstration/0_hk0ic912" target="_blank" class="SiteReportStyle">Video Demonstration URL: Click Here</a>
+            
+        
+        </div>
+    </main>
+
+    <!-- I was facing a design issue here. What was happening is that I am using my main tag background for design my page, and now I was faced with having to fit the all the other content in the aside tag, which was not enough. I solved it my creating a div inisde of another div -->
+    <aside class="AsideSiteReportPage">
+        <div class="SiteReportPage">
+
+            <!-- I was facing a problem my first two image titles in the grid layout were persistant on being unconsistent with the rest of the titles structure. I solved this, but how I solved it is weird, because I just uncopied the previous ones and typied them again. I feel like how the view of the website is sometimes beyond just how I control it with coding. I think that the view and opening in the browser, sometimes as keep doing too many changes, it stops responding as expected as type more code in visual studio code, taking into consideration that I have not shut down my computer once since I started committing because I would afriad that I might forgot to save or stuff like that, evne I am turning auto save on. -->
+    
+
+            <div class="SiteReportPage">
+                <a href="ScreenshotHomePage.png" target="_blank" class="SiteReportImageAnchor">Home Page</a>
+                <img src="ScreenshotHomePage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+    
+            <div class="SiteReportPage">
+                <a href="ScreenshotContactPage.png" target="_blank" class="SiteReportImageAnchor">Contact Page</a>
+                <img src="ScreenshotContactPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+
+            <div class="SiteReportPage">
+                <a href="ScreenshotVideoDemoPage.png" target="_blank" class="SiteReportImageAnchor">Video Demo Page</a>
+                <img src="ScreenshotVideoDemoPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+    
+            <div class="SiteReportPage">
+                <a href="ScreenshotProjectPage.png" target="_blank" class="SiteReportImageAnchor">Project Page</a>
+                <img src="ScreenshotProjectPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+    
+            <div class="SiteReportPage">
+                <a href="ScreenshotSiteReportPage.png" target="_blank" class="SiteReportImageAnchor">Site Report Page</a>
+                <img src="ScreenshotSiteReportPage.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+    
+            <div class="SiteReportPage">
+                <a href="ScreenshotMainViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS Main</a>
+                <img src="ScreenshotMainViewCSS.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+    
+            <div class="SiteReportPage">
+                <a href="ScreenshotDesktopViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS Desktop</a>
+                <img src="ScreenshotDesktopViewCSS.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+    
+            <div class="SiteReportPage">
+                <a href="ScreenshotMobileViewCSS.png" target="_blank" class="SiteReportImageAnchor">CSS Mobile</a>
+                <img src="ScreenshotMobileViewCSS.png" alt="Link for Home Page Validation" class="SiteReportResizingImages">
+            </div>
+        </div>
+    </aside>
+
+    <footer> 
+        <p class="footerReportStyle"> Rerference: Color Palette Reference: Coolors.co. (2017). Coolors.co. [online] Available at: https://coolors.co/355ed1-308dff-0050b5-2d3167-b0d7ff [Accessed 28 Feb. 2025].</p>
+
+        <p class="footerReportStyle"> Harvard referencing tool Rerference: MyBib Contributors (2019). Harvard Referencing Generator – FREE – (updated for 2019). [online] MyBib. Available at: https://www.mybib.com/tools/harvard-referencing-generator.</p>
+
+        <p class="footerReportStyle"> Keyframes Rerference: MDN Web Docs. (n.d.). @keyframes. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes.</p>
+
+        <p class="footerReportStyle"> Underline Animation code Reference: Youtu.be. (2025). Available at: https://youtu.be/z2LQYsZhsFw [Accessed 15 Mar. 2025].</p>
+
+        <p class="footerReportStyle"> CSS Gradient Generator Rerference: CSS Gradient. (2017). CSS Gradient — Generator, Maker, and Background. [online] Available at: https://cssgradient.io.</p>
+
+        <p class="footerReportStyle"> Project Image Generator Rerference: Dummyimage.com. (2025). Dynamic Dummy Image Generator - DummyImage.com. [online] Available at: https://dummyimage.com [Accessed 14 Mar. 2025].</p>
+
+        <p class="footerReportStyle"> Validation Tool Rerference: W3C (n.d.). The W3C Markup Validation Service. [online] validator.w3.org. Available at: https://validator.w3.org/#validate_by_input.</p>
+
+        <p class="footerReportStyle"> More Animation Exploration Reference: Youtu.be. (2025). Available at: https://youtu.be/z2LQYsZhsFw [Accessed 15 Mar. 2025].</p>
+
+        <p class="footerReportStyle"> More Animation Exploration Reference: W3schools (2019). CSS Animations. [online] W3schools.com. Available at: https://www.w3schools.com/css/css3_animations.asp.</p>
+
+        <p>&copy; Shady Nashed 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>
